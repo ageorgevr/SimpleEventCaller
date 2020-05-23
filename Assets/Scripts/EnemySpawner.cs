@@ -7,7 +7,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] GameObject enemyPrefab;
     Coroutine spawnroutine;
 
-    private void Awake()
+    private void Start()
     {
         GameManager.instance.gameStarted += StartSpawning;
         GameManager.instance.gameLost += StopSpawning;

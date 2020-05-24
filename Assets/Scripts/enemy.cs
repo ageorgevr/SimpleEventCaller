@@ -19,8 +19,8 @@ public class enemy : MonoBehaviour
     void SelfDestruct()
     {
         GameManager.instance.gameLost -= SelfDestruct;
-        Destroy(gameObject);
         Instantiate(ps, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 
 
